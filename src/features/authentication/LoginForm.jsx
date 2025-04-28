@@ -14,6 +14,7 @@ function LoginForm() {
   function handleSubmit(e) {
     e.preventDefault();
     if (!email || !password) return;
+
     login(
       { email, password },
       {
@@ -24,6 +25,22 @@ function LoginForm() {
       }
     );
   }
+
+  function handleGuestLogin(e) {
+    e.preventDefault();
+    // if (!email || !password) return;
+
+    login(
+      { email: "test@test.com", password: "test1234" },
+      {
+        onSettled: () => {
+          setEmail("");
+          setPassword("");
+        },
+      }
+    );
+  }
+
   return (
     <Form onSubmit={handleSubmit}>
       <FormRowVertical label="Email address">
@@ -49,8 +66,16 @@ function LoginForm() {
         />
       </FormRowVertical>
       <FormRowVertical>
-        <Button size="large" disabled={isLoading}>
+        <Button type="submit" size="large" disabled={isLoading}>
           {!isLoading ? "Log in" : <SpinnerMini />}
+        </Button>
+        <Button
+          type="button"
+          size="large"
+          disabled={isLoading}
+          onClick={handleGuestLogin}
+        >
+          {!isLoading ? "ENTER AS GUEST" : <SpinnerMini />}
         </Button>
       </FormRowVertical>
     </Form>

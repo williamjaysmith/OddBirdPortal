@@ -22,7 +22,7 @@ export async function login({ email, password }) {
     email,
     password,
   });
-  // console.log(email, password);
+  //console.log(email, password);
   if (error) throw new Error(error.message);
 
   return data;

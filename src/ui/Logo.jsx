@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { useDarkMode } from "../context/DarkModeContext";
 
 const StyledLogo = styled.div`
   text-align: center;
+  background-color: var(--color-grey-50);
+  font-size: 2rem;
 `;
 
 const Img = styled.img`
@@ -11,15 +12,7 @@ const Img = styled.img`
 `;
 
 function Logo() {
-  const { isDarkMode } = useDarkMode();
-
-  const src = isDarkMode ? "/OddLogo-dark.png" : "/OddLogo-light.png";
-
-  return (
-    <StyledLogo>
-      <Img src={src} alt="Logo" />
-    </StyledLogo>
-  );
+  return <StyledLogo>WILDERNESTS Portal</StyledLogo>;
 }
 
 export default Logo;

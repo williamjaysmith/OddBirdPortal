@@ -1,17 +1,17 @@
-<h1 align="center">OddBird Employee Portal</h1>
+<h1 align="center">Wildernest Employee Portal</h1>
 
 <p align="center">
-  <a href="https://oddbird-portal.vercel.app/" target="_blank">
-    <img src="https://willsmith.dev/assets/video/OddbirdPortal.gif" width="300" alt="Click here to head to Oddbird Portal!">
+  <a href="https://wildernests-portal.vercel.app/" target="_blank">
+    <img src="https://willsmith.dev/assets/video/OddbirdPortal.gif" width="300" alt="Click here to head to Wildernests Portal!">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://oddbird-portal.vercel.app/" target="_blank"><strong>Click here to view the OddBird employee portal</strong></a>
+  <a href="https://wildernests-portal.vercel.app/" target="_blank"><strong>Click here to view the Wildernests employee portal</strong></a>
 </p>
 
 <p align="center">
- The OddBird employee portal is a full-stack application that empowers employees to manage business operations, including editing customer bookings, checking guests in and out, creating secure accounts, and visualizing booking and sales metrics through a custom dashboard.
+ The Wildernests employee portal is a full-stack application that empowers employees to manage business operations, including editing customer bookings, checking guests in and out, creating secure accounts, and visualizing booking and sales metrics through a custom dashboard.
 </p>
 
 ## FEATURES

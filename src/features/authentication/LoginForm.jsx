@@ -75,7 +75,7 @@ function LoginForm() {
           disabled={isLoading}
           onClick={handleGuestLogin}
         >
-          {!isLoading ? "ENTER AS GUEST" : <SpinnerMini />}
+          {!isLoading ? "GUEST" : <SpinnerMini />}
         </Button>
       </FormRowVertical>
     </Form>

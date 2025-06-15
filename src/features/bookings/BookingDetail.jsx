@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 import BookingDataBox from "./BookingDataBox";
 import Row from "../../ui/Row";
 import Heading from "../../ui/Heading";
@@ -18,12 +16,6 @@ import Modal from "../../ui/Modal";
 import ConfirmDelete from "../../ui/ConfirmDelete";
 import { useDeleteBooking } from "./useDeleteBooking";
 import Empty from "../../ui/Empty";
-
-const HeadingGroup = styled.div`
-  display: flex;
-  gap: 2.4rem;
-  align-items: center;
-`;
 
 function BookingDetail() {
   const { booking, isLoading } = useBooking();
@@ -47,10 +39,10 @@ function BookingDetail() {
   return (
     <>
       <Row type="horizontal">
-        <HeadingGroup>
+        <div className="flex gap-2.4 items-center">
           <Heading as="h1">Booking #{bookingId}</Heading>
           <Tag type={statusToTagName[status]}>{status.replace("-", " ")}</Tag>
-        </HeadingGroup>
+        </div>
         <ButtonText onClick={moveBack}>&larr; Back</ButtonText>
       </Row>
 

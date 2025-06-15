@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { format, isToday } from "date-fns";
 import {
   HiArrowDownOnSquare,
@@ -18,33 +17,6 @@ import { formatCurrency } from "../../utils/helpers";
 import { formatDistanceFromNow } from "../../utils/helpers";
 import { useCheckout } from "../check-in-out/useCheckout";
 import { useDeleteBooking } from "./useDeleteBooking";
-
-const Cabin = styled.div`
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--color-grey-600);
-  font-family: "Sono";
-`;
-
-const Stacked = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-
-  & span:first-child {
-    font-weight: 500;
-  }
-
-  & span:last-child {
-    color: var(--color-grey-500);
-    font-size: 1.2rem;
-  }
-`;
-
-const Amount = styled.div`
-  font-family: "Sono";
-  font-weight: 500;
-`;
 
 function BookingRow({
   booking: {
@@ -72,29 +44,29 @@ function BookingRow({
 
   return (
     <Table.Row>
-      <Cabin>{cabinName}</Cabin>
+      <div className="text-base font-semibold text-grey-600 font-mono">{cabinName}</div>
 
-      <Stacked>
-        <span>{guestName}</span>
-        <span>{email}</span>
-      </Stacked>
+      <div className="flex flex-col gap-1">
+        <span className="font-medium">{guestName}</span>
+        <span className="text-grey-500 text-xs">{email}</span>
+      </div>
 
-      <Stacked>
-        <span>
+      <div className="flex flex-col gap-1">
+        <span className="font-medium">
           {isToday(new Date(startDate))
             ? "Today"
             : formatDistanceFromNow(startDate)}{" "}
           &rarr; {numNights} night stay
         </span>
-        <span>
+        <span className="text-grey-500 text-xs">
           {format(new Date(startDate), "MMM dd yyyy")} &mdash;{" "}
           {format(new Date(endDate), "MMM dd yyyy")}
         </span>
-      </Stacked>
+      </div>
 
       <Tag type={statusToTagName[status]}>{status.replace("-", " ")}</Tag>
 
-      <Amount>{formatCurrency(totalPrice)}</Amount>
+      <div className="font-mono font-medium">{formatCurrency(totalPrice)}</div>
 
       <Modal>
         <Menus.Menu>

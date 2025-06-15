@@ -1,9 +1,11 @@
-import styled from 'styled-components';
+import { cn } from "../utils/helpers";
 
-const ButtonGroup = styled.div`
-  display: flex;
-  gap: 1.2rem;
-  justify-content: flex-end;
-`;
+const ButtonGroup = ({ children, className = "", ...props }) => {
+  return (
+    <div className={cn("flex flex-wrap gap-2 justify-end", className)} {...props}>
+      {children}
+    </div>
+  );
+};
 
 export default ButtonGroup;

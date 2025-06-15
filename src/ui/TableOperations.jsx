@@ -1,9 +1,11 @@
-import styled from 'styled-components';
+import { cn } from "../utils/helpers";
 
-const TableOperations = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-`;
+const TableOperations = ({ children, className = "", ...props }) => {
+  return (
+    <div className={cn("flex flex-wrap items-center gap-2", className)} {...props}>
+      {children}
+    </div>
+  );
+};
 
 export default TableOperations;

@@ -1,28 +1,26 @@
-import styled from "styled-components";
+import { cn } from "../utils/helpers";
 
-const StyledSelect = styled.select`
-  font-size: 1.4rem;
-  padding: 0.8rem 1.2rem;
-  border: 1px solid
-    ${(props) =>
-      props.type === "white"
-        ? "var(--color-grey-100)"
-        : "var(--color-grey-300)"};
-  border-radius: var(--border-radius-sm);
-  background-color: var(--color-grey-0);
-  font-weight: 500;
-  box-shadow: var(--shadow-sm);
-`;
-
-function Select({ options, value, onChange, ...props }) {
+function Select({ options, value, onChange, type = "default", className = "", ...props }) {
+  const borderStyle = type === "white" ? "border-grey-100" : "border-grey-300";
+  
   return (
-    <StyledSelect value={value} onChange={onChange} {...props}>
+    <select
+      value={value}
+      onChange={onChange}
+      className={cn(
+        "text-small px-1.2 py-3 bg-grey-0 font-medium shadow-sm rounded-small focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-opacity-50 disabled:bg-grey-200 disabled:text-grey-500",
+        borderStyle,
+        "border",
+        className
+      )}
+      {...props}
+    >
       {options.map((option) => (
         <option value={option.value} key={option.value}>
           {option.label}
         </option>
       ))}
-    </StyledSelect>
+    </select>
   );
 }
 

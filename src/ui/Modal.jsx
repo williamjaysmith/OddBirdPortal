@@ -1,57 +1,8 @@
 import { cloneElement, createContext, useContext, useState } from "react";
 import { createPortal } from "react-dom";
 import { HiXMark } from "react-icons/hi2";
-import styled from "styled-components";
 import { useOutsideClick } from "../hooks/useOutsideClick";
-
-const StyledModal = styled.div`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--color-grey-0);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-lg);
-  padding: 3.2rem 4rem;
-  transition: all 0.5s;
-`;
-
-const Overlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--backdrop-color);
-  backdrop-filter: blur(4px);
-  z-index: 1000;
-  transition: all 0.5s;
-`;
-
-const Button = styled.button`
-  background: none;
-  border: none;
-  padding: 0.4rem;
-  border-radius: var(--border-radius-sm);
-  transform: translateX(0.8rem);
-  transition: all 0.2s;
-  position: absolute;
-  top: 1.2rem;
-  right: 1.9rem;
-
-  &:hover {
-    background-color: var(--color-grey-100);
-  }
-
-  & svg {
-    width: 2.4rem;
-    height: 2.4rem;
-    /* Sometimes we need both */
-    /* fill: var(--color-grey-500);
-    stroke: var(--color-grey-500); */
-    color: var(--color-grey-500);
-  }
-`;
+import { cn } from "../utils/helpers";
 
 const ModalContext = createContext();
 
@@ -67,7 +18,6 @@ function Modal({ children }) {
     </ModalContext.Provider>
   );
 }
-// ---------------------------------------------------------------
 
 function Open({ children, opens: opensWindowName }) {
   const { open } = useContext(ModalContext);
@@ -75,23 +25,31 @@ function Open({ children, opens: opensWindowName }) {
   return cloneElement(children, { onClick: () => open(opensWindowName) });
 }
 
-// ---------------------------------------------------------------
-function Window({ children, name }) {
+function Window({ children, name, className = "" }) {
   const { openName, close } = useContext(ModalContext);
   const ref = useOutsideClick(close);
 
   if (name !== openName) return null;
 
   return createPortal(
-    <Overlay>
-      <StyledModal ref={ref}>
-        <Button onClick={close}>
+    <div className="fixed inset-0 w-full h-screen bg-[var(--backdrop-color)] backdrop-blur-sm z-[1000] transition-all duration-500">
+      <div 
+        ref={ref}
+        className={cn(
+          "fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-grey-0 rounded-large shadow-lg px-16 py-12.8 transition-all duration-500 max-w-[90vw] max-h-[90vh] overflow-auto",
+          className
+        )}
+      >
+        <button
+          onClick={close}
+          className="absolute top-1.2 right-7.5 bg-transparent border-none p-1.5 rounded-small transition-all duration-200 hover:bg-grey-100 [&>svg]:w-2.4 [&>svg]:h-2.4 [&>svg]:text-grey-500"
+        >
           <HiXMark />
-        </Button>
+        </button>
 
         <div>{cloneElement(children, { onCloseModal: close })}</div>
-      </StyledModal>
-    </Overlay>,
+      </div>
+    </div>,
     document.body
   );
 }

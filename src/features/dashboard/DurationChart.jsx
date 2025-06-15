@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Heading from "../../ui/Heading";
 import {
   Cell,
@@ -9,24 +8,6 @@ import {
   Tooltip,
 } from "recharts";
 import { useDarkMode } from "../../context/DarkModeContext";
-
-const ChartBox = styled.div`
-  /* Box */
-  background-color: var(--color-grey-0);
-  border: 1px solid var(--color-grey-100);
-  border-radius: var(--border-radius-md);
-
-  padding: 2.4rem 3.2rem;
-  grid-column: 3 / span 2;
-
-  & > *:first-child {
-    margin-bottom: 1.6rem;
-  }
-
-  & .recharts-pie-label-text {
-    font-weight: 600;
-  }
-`;
 
 const startDataLight = [
   {
@@ -147,7 +128,7 @@ function DurationChart({ confirmedStays }) {
   const data = prepareData(startData, confirmedStays);
 
   return (
-    <ChartBox>
+    <div className="bg-grey-0 border border-grey-100 rounded-lg px-8 py-6 col-start-3 col-span-2 [&>*:first-child]:mb-4 [&_.recharts-pie-label-text]:font-semibold">
       <Heading as="h2">Stay duration summary</Heading>
       <ResponsiveContainer width="100%" height={240}>
         <PieChart>
@@ -180,7 +161,7 @@ function DurationChart({ confirmedStays }) {
           />
         </PieChart>
       </ResponsiveContainer>
-    </ChartBox>
+    </div>
   );
 }
 

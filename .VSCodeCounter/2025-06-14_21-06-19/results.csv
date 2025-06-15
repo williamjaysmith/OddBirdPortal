@@ -1,0 +1,121 @@
+"filename", "language", "JavaScript", "JavaScript JSX", "JSON", "Markdown", "JSON with Comments", "HTML", "comment", "blank", "total"
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/.eslintrc.json", "JSON with Comments", 0, 0, 0, 0, 3, 0, 0, 1, 4
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/index.html", "HTML", 0, 0, 0, 0, 0, 23, 0, 3, 26
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/package.json", "JSON", 0, 0, 36, 0, 0, 0, 0, 1, 37
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/readme.md", "Markdown", 0, 0, 0, 28, 0, 0, 0, 8, 36
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/App.jsx", "JavaScript JSX", 0, 81, 0, 0, 0, 0, 2, 8, 91
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/context/DarkModeContext.jsx", "JavaScript JSX", 0, 36, 0, 0, 0, 0, 0, 8, 44
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/data/Uploader.jsx", "JavaScript JSX", 0, 122, 0, 0, 0, 0, 10, 23, 155
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/data/data-bookings.js", "JavaScript", 276, 0, 0, 0, 0, 0, 8, 10, 294
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/data/data-cabins.js", "JavaScript", 76, 0, 0, 0, 0, 0, 0, 3, 79
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/data/data-guests.js", "JavaScript", 212, 0, 0, 0, 0, 0, 3, 3, 218
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/LoginForm.jsx", "JavaScript JSX", 0, 75, 0, 0, 0, 0, 2, 9, 86
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/Logout.jsx", "JavaScript JSX", 0, 13, 0, 0, 0, 0, 0, 4, 17
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/SignupForm.jsx", "JavaScript JSX", 0, 86, 0, 0, 0, 0, 2, 10, 98
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/UpdatePasswordForm.jsx", "JavaScript JSX", 0, 59, 0, 0, 0, 0, 0, 8, 67
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/UpdateUserDataForm.jsx", "JavaScript JSX", 0, 72, 0, 0, 0, 0, 1, 13, 86
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/UserAvatar.jsx", "JavaScript JSX", 0, 34, 0, 0, 0, 0, 0, 6, 40
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/useLogin.js", "JavaScript", 20, 0, 0, 0, 0, 0, 0, 4, 24
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/useLogout.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 4, 19
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/useSignup.js", "JavaScript", 14, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/useUpdateUser.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 4, 19
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/authentication/useUser.js", "JavaScript", 9, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/bookings/BookingDataBox.jsx", "JavaScript JSX", 0, 167, 0, 0, 0, 0, 1, 20, 188
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/bookings/BookingDetail.jsx", "JavaScript JSX", 0, 86, 0, 0, 0, 0, 0, 17, 103
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/bookings/BookingRow.jsx", "JavaScript JSX", 0, 129, 0, 0, 0, 0, 0, 19, 148
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/bookings/BookingTable.jsx", "JavaScript JSX", 0, 36, 0, 0, 0, 0, 0, 9, 45
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/bookings/BookingTableOperations.jsx", "JavaScript JSX", 0, 30, 0, 0, 0, 0, 0, 4, 34
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/bookings/useBooking.js", "JavaScript", 16, 0, 0, 0, 0, 0, 0, 4, 20
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/bookings/useBookings.js", "JavaScript", 37, 0, 0, 0, 0, 0, 6, 10, 53
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/bookings/useDeleteBooking.js", "JavaScript", 17, 0, 0, 0, 0, 0, 0, 5, 22
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/cabins/AddCabin.jsx", "JavaScript JSX", 0, 18, 0, 0, 0, 0, 15, 5, 38
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/cabins/CabinRow.jsx", "JavaScript JSX", 0, 102, 0, 0, 0, 0, 10, 18, 130
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/cabins/CabinTable.jsx", "JavaScript JSX", 0, 45, 0, 0, 0, 0, 4, 9, 58
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/cabins/CabinTableOperations.jsx", "JavaScript JSX", 0, 28, 0, 0, 0, 0, 0, 4, 32
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/cabins/CreateCabinForm.jsx", "JavaScript JSX", 0, 140, 0, 0, 0, 0, 2, 17, 159
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/cabins/useCabins.js", "JavaScript", 13, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/cabins/useCreateCabin.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 4, 19
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/cabins/useDeleteCabin.js", "JavaScript", 17, 0, 0, 0, 0, 0, 0, 5, 22
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/cabins/useEditCabin.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 4, 19
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/check-in-out/CheckinBooking.jsx", "JavaScript JSX", 0, 106, 0, 0, 0, 0, 0, 18, 124
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/check-in-out/CheckoutButton.jsx", "JavaScript JSX", 0, 16, 0, 0, 0, 0, 0, 4, 20
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/check-in-out/TodayActivity.jsx", "JavaScript JSX", 0, 60, 0, 0, 0, 0, 0, 10, 70
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/check-in-out/TodayItem.jsx", "JavaScript JSX", 0, 47, 0, 0, 0, 0, 0, 9, 56
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/check-in-out/useCheckin.js", "JavaScript", 23, 0, 0, 0, 0, 0, 0, 6, 29
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/check-in-out/useCheckout.js", "JavaScript", 18, 0, 0, 0, 0, 0, 0, 6, 24
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/check-in-out/useTodayActivity.js", "JavaScript", 9, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/dashboard/DashboardBox.jsx", "JavaScript JSX", 0, 14, 0, 0, 0, 0, 0, 3, 17
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/dashboard/DashboardFilter.jsx", "JavaScript JSX", 0, 14, 0, 0, 0, 0, 0, 3, 17
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/dashboard/DashboardLayout.jsx", "JavaScript JSX", 0, 35, 0, 0, 0, 0, 0, 6, 41
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/dashboard/DurationChart.jsx", "JavaScript JSX", 0, 176, 0, 0, 0, 0, 1, 11, 188
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/dashboard/SalesChart.jsx", "JavaScript JSX", 0, 97, 0, 0, 0, 0, 0, 9, 106
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/dashboard/Stat.jsx", "JavaScript JSX", 0, 54, 0, 0, 0, 0, 0, 7, 61
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/dashboard/Stats.jsx", "JavaScript JSX", 0, 45, 0, 0, 0, 0, 5, 7, 57
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/dashboard/useRecentBookings.js", "JavaScript", 16, 0, 0, 0, 0, 0, 0, 5, 21
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/dashboard/useRecentStays.js", "JavaScript", 19, 0, 0, 0, 0, 0, 0, 6, 25
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/settings/UpdateSettingsForm.jsx", "JavaScript JSX", 0, 65, 0, 0, 0, 0, 0, 10, 75
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/settings/useSettings.js", "JavaScript", 13, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/features/settings/useUpdateSetting.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 4, 19
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/hooks/useLocalStorageState.js", "JavaScript", 14, 0, 0, 0, 0, 0, 0, 4, 18
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/hooks/useMoveBack.js", "JavaScript", 5, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/hooks/useOutsideClick.js", "JavaScript", 18, 0, 0, 0, 0, 0, 0, 6, 24
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/main.jsx", "JavaScript JSX", 0, 15, 0, 0, 0, 0, 0, 2, 17
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/Account.jsx", "JavaScript JSX", 0, 20, 0, 0, 0, 0, 0, 5, 25
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/Booking.jsx", "JavaScript JSX", 0, 5, 0, 0, 0, 0, 0, 3, 8
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/Bookings.jsx", "JavaScript JSX", 0, 16, 0, 0, 0, 0, 0, 4, 20
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/Cabins.jsx", "JavaScript JSX", 0, 20, 0, 0, 0, 0, 0, 4, 24
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/Checkin.jsx", "JavaScript JSX", 0, 5, 0, 0, 0, 0, 0, 3, 8
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/Dashboard.jsx", "JavaScript JSX", 0, 16, 0, 0, 0, 0, 0, 4, 20
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/Login.jsx", "JavaScript JSX", 0, 23, 0, 0, 0, 0, 0, 4, 27
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/PageNotFound.jsx", "JavaScript JSX", 0, 41, 0, 0, 0, 0, 0, 7, 48
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/Settings.jsx", "JavaScript JSX", 0, 12, 0, 0, 0, 0, 0, 3, 15
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/pages/Users.jsx", "JavaScript JSX", 0, 11, 0, 0, 0, 0, 0, 3, 14
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/services/apiAuth.js", "JavaScript", 54, 0, 0, 0, 0, 0, 4, 18, 76
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/services/apiBookings.js", "JavaScript", 98, 0, 0, 0, 0, 0, 10, 24, 132
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/services/apiCabins.js", "JavaScript", 47, 0, 0, 0, 0, 0, 5, 19, 71
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/services/apiSettings.js", "JavaScript", 21, 0, 0, 0, 0, 0, 2, 5, 28
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/services/supabase.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 3, 9
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/styles/GlobalStyles.js", "JavaScript", 188, 0, 0, 0, 0, 0, 39, 4, 231
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/AppLayout.jsx", "JavaScript JSX", 0, 37, 0, 0, 0, 0, 0, 6, 43
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Button.jsx", "JavaScript JSX", 0, 60, 0, 0, 0, 0, 0, 6, 66
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/ButtonGroup.jsx", "JavaScript JSX", 0, 7, 0, 0, 0, 0, 0, 3, 10
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/ButtonIcon.jsx", "JavaScript JSX", 0, 19, 0, 0, 0, 0, 0, 3, 22
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/ButtonText.jsx", "JavaScript JSX", 0, 16, 0, 0, 0, 0, 0, 3, 19
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Checkbox.jsx", "JavaScript JSX", 0, 40, 0, 0, 0, 0, 0, 4, 44
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/ConfirmDelete.jsx", "JavaScript JSX", 0, 44, 0, 0, 0, 0, 0, 5, 49
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/DarkModeToggle.jsx", "JavaScript JSX", 0, 12, 0, 0, 0, 0, 0, 4, 16
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/DataItem.jsx", "JavaScript JSX", 0, 31, 0, 0, 0, 0, 0, 5, 36
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Empty.jsx", "JavaScript JSX", 0, 4, 0, 0, 0, 0, 0, 2, 6
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/ErrorFallback.jsx", "JavaScript JSX", 0, 49, 0, 0, 0, 0, 0, 4, 53
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/FileInput.jsx", "JavaScript JSX", 0, 23, 0, 0, 0, 0, 0, 3, 26
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Filter.jsx", "JavaScript JSX", 0, 58, 0, 0, 0, 0, 0, 8, 66
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Flag.jsx", "JavaScript JSX", 0, 7, 0, 0, 0, 0, 0, 2, 9
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Form.jsx", "JavaScript JSX", 0, 24, 0, 0, 0, 0, 1, 5, 30
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/FormRow.jsx", "JavaScript JSX", 0, 44, 0, 0, 0, 0, 0, 6, 50
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/FormRowVertical.jsx", "JavaScript JSX", 0, 24, 0, 0, 0, 0, 0, 6, 30
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Header.jsx", "JavaScript JSX", 0, 22, 0, 0, 0, 0, 0, 4, 26
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/HeaderMenu.jsx", "JavaScript JSX", 0, 29, 0, 0, 0, 0, 0, 5, 34
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Heading.jsx", "JavaScript JSX", 0, 34, 0, 0, 0, 0, 4, 4, 42
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Input.jsx", "JavaScript JSX", 0, 9, 0, 0, 0, 0, 0, 3, 12
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Logo.jsx", "JavaScript JSX", 0, 14, 0, 0, 0, 0, 0, 5, 19
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/MainNav.jsx", "JavaScript JSX", 0, 91, 0, 0, 0, 0, 0, 5, 96
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Menus.jsx", "JavaScript JSX", 0, 124, 0, 0, 0, 0, 0, 22, 146
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Modal-v1.jsx", "JavaScript JSX", 0, 63, 0, 0, 0, 0, 0, 7, 70
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Modal.jsx", "JavaScript JSX", 0, 85, 0, 0, 0, 0, 2, 16, 103
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Pagination.jsx", "JavaScript JSX", 0, 98, 0, 0, 0, 0, 0, 16, 114
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/ProtectedRoute.jsx", "JavaScript JSX", 0, 30, 0, 0, 0, 0, 4, 8, 42
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Row.jsx", "JavaScript JSX", 0, 22, 0, 0, 0, 0, 0, 4, 26
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Select.jsx", "JavaScript JSX", 0, 26, 0, 0, 0, 0, 0, 4, 30
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Sidebar.jsx", "JavaScript JSX", 0, 24, 0, 0, 0, 0, 0, 4, 28
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/SortBy.jsx", "JavaScript JSX", 0, 19, 0, 0, 0, 0, 0, 5, 24
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Spinner.jsx", "JavaScript JSX", 0, 19, 0, 0, 0, 0, 0, 4, 23
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/SpinnerMini.jsx", "JavaScript JSX", 0, 13, 0, 0, 0, 0, 0, 4, 17
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Table.jsx", "JavaScript JSX", 0, 87, 0, 0, 0, 0, 0, 15, 102
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/TableOperations.jsx", "JavaScript JSX", 0, 7, 0, 0, 0, 0, 0, 3, 10
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Tag.jsx", "JavaScript JSX", 0, 14, 0, 0, 0, 0, 0, 3, 17
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/ui/Textarea.jsx", "JavaScript JSX", 0, 11, 0, 0, 0, 0, 0, 3, 14
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/utils/constants.js", "JavaScript", 1, 0, 0, 0, 0, 0, 0, 1, 2
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/src/utils/helpers.js", "JavaScript", 21, 0, 0, 0, 0, 0, 4, 6, 31
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/vercel.json", "JSON", 0, 0, 8, 0, 0, 0, 0, 1, 9
+"/Users/williamsmith/Documents/GITHUB/Wildernests Portal/vite.config.js", "JavaScript", 6, 0, 0, 0, 0, 0, 1, 2, 9
+"Total", "-", 1359, 3612, 44, 28, 3, 23, 148, 779, 5996

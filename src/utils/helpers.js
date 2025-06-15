@@ -28,3 +28,12 @@ export const formatCurrency = (value) =>
   new Intl.NumberFormat('en', { style: 'currency', currency: 'USD' }).format(
     value
   );
+
+// Utility function to merge class names (similar to clsx)
+export const cn = (...classes) => {
+  return classes
+    .filter(Boolean)
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+};

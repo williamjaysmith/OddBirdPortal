@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import BookingDataBox from "../../features/bookings/BookingDataBox";
 
 import Row from "../../ui/Row";
@@ -15,14 +14,6 @@ import Checkbox from "../../ui/Checkbox";
 import { formatCurrency } from "../../utils/helpers";
 import { useCheckin } from "./useCheckin";
 import { useSettings } from "../settings/useSettings";
-
-const Box = styled.div`
-  /* Box */
-  background-color: var(--color-grey-0);
-  border: 1px solid var(--color-grey-100);
-  border-radius: var(--border-radius-md);
-  padding: 2.4rem 4rem;
-`;
 
 function CheckinBooking() {
   const [confirmPaid, setConfirmPaid] = useState(false);
@@ -76,7 +67,7 @@ function CheckinBooking() {
       <BookingDataBox booking={booking} />
 
       {!hasBreakfast && (
-        <Box>
+        <div className="bg-grey-0 border border-grey-100 rounded-medium p-2.4">
           <Checkbox
             checked={addBreakfast}
             onChange={() => {
@@ -87,10 +78,10 @@ function CheckinBooking() {
           >
             Want to add breakfast for {formatCurrency(optionalBreakfastPrice)}?
           </Checkbox>
-        </Box>
+        </div>
       )}
 
-      <Box>
+      <div className="bg-grey-0 border border-grey-100 rounded-medium p-2.4">
         <Checkbox
           checked={confirmPaid}
           onChange={() => setConfirmPaid((confirm) => !confirm)}
@@ -106,7 +97,7 @@ function CheckinBooking() {
                 optionalBreakfastPrice
               )})`}
         </Checkbox>
-      </Box>
+      </div>
 
       <ButtonGroup>
         <Button onClick={handleCheckin} disabled={!confirmPaid || isCheckingIn}>

@@ -1,16 +1,27 @@
-import styled from "styled-components";
+import { cn } from "../utils/helpers";
 
-const Tag = styled.span`
-  width: fit-content;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 0.4rem 1.2rem;
-  border-radius: 100px;
+const Tag = ({ type = "blue", children, className = "", ...props }) => {
+  const typeStyles = {
+    blue: "text-blue-700 bg-blue-100",
+    green: "text-green-700 bg-green-100", 
+    yellow: "text-yellow-700 bg-yellow-100",
+    silver: "text-silver-700 bg-silver-100",
+    indigo: "text-indigo-700 bg-indigo-100",
+    red: "text-red-700 bg-red-100",
+  };
 
-  /* Make these dynamic, based on the received prop */
-  color: var(--color-${(props) => props.type}-700);
-  background-color: var(--color-${(props) => props.type}-100);
-`;
+  return (
+    <span
+      className={cn(
+        "w-fit uppercase text-xs font-semibold px-1.2 py-1.5 rounded-full",
+        typeStyles[type] || typeStyles.blue,
+        className
+      )}
+      {...props}
+    >
+      {children}
+    </span>
+  );
+};
 
 export default Tag;

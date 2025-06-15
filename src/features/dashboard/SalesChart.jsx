@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import DashboardBox from "./DashboardBox";
 import Heading from "../../ui/Heading";
 import {
@@ -12,16 +11,6 @@ import {
 } from "recharts";
 import { useDarkMode } from "../../context/DarkModeContext";
 import { eachDayOfInterval, format, isSameDay, subDays } from "date-fns";
-
-const StyledSalesChart = styled(DashboardBox)`
-  grid-column: 1 / -1;
-
-  /* Hack to change grid line colors */
-  & .recharts-cartesian-grid-horizontal line,
-  & .recharts-cartesian-grid-vertical line {
-    stroke: var(--color-grey-300);
-  }
-`;
 
 function SalesChart({ bookings, numDays }) {
   const { isDarkMode } = useDarkMode();
@@ -58,7 +47,7 @@ function SalesChart({ bookings, numDays }) {
       };
 
   return (
-    <StyledSalesChart>
+    <DashboardBox className="col-span-full [&_.recharts-cartesian-grid-horizontal_line]:stroke-grey-300 [&_.recharts-cartesian-grid-vertical_line]:stroke-grey-300">
       <Heading as="h2">
         Sales from {format(allDates.at(0), "MMM dd yyyy")} &mdash;{" "}
         {format(allDates.at(-1), "MMM dd yyyy")}{" "}
@@ -98,7 +87,7 @@ function SalesChart({ bookings, numDays }) {
           />
         </AreaChart>
       </ResponsiveContainer>
-    </StyledSalesChart>
+    </DashboardBox>
   );
 }
 

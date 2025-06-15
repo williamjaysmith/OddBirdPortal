@@ -1,28 +1,20 @@
-import styled from "styled-components";
+import { cn } from "../utils/helpers";
 
-const StyledFormRow = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 1.2rem 0;
-`;
-
-const Label = styled.label`
-  font-weight: 500;
-`;
-
-const Error = styled.span`
-  font-size: 1.4rem;
-  color: var(--color-red-700);
-`;
-
-function FormRowVertical({ label, error, children }) {
+function FormRowVertical({ label, error, children, className = "" }) {
   return (
-    <StyledFormRow>
-      {label && <Label htmlFor={children.props.id}>{label}</Label>}
+    <div className={cn("flex flex-col gap-2 py-3", className)}>
+      {label && (
+        <label htmlFor={children.props?.id} className="font-medium text-grey-700">
+          {label}
+        </label>
+      )}
       {children}
-      {error && <Error>{error}</Error>}
-    </StyledFormRow>
+      {error && (
+        <span className="text-sm text-red-700">
+          {error}
+        </span>
+      )}
+    </div>
   );
 }
 

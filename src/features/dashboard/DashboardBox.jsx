@@ -1,16 +1,17 @@
-import styled from "styled-components";
+import { cn } from "../../utils/helpers";
 
-const DashboardBox = styled.div`
-  /* Box */
-  background-color: var(--color-grey-0);
-  border: 1px solid var(--color-grey-100);
-  border-radius: var(--border-radius-md);
-
-  padding: 3.2rem;
-
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-`;
+const DashboardBox = ({ children, className = "", ...props }) => {
+  return (
+    <div 
+      className={cn(
+        "bg-grey-0 border border-grey-100 rounded-lg p-6 flex flex-col gap-4",
+        className
+      )}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+};
 
 export default DashboardBox;

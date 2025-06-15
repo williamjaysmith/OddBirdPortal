@@ -1,42 +1,20 @@
-import styled from "styled-components";
+import { cn } from "../utils/helpers";
 
-const StyledCheckbox = styled.div`
-  display: flex;
-  gap: 1.6rem;
-
-  & input[type="checkbox"] {
-    height: 2.4rem;
-    width: 2.4rem;
-    outline-offset: 2px;
-    transform-origin: 0;
-    accent-color: var(--color-brand-600);
-  }
-
-  & input[type="checkbox"]:disabled {
-    accent-color: var(--color-brand-600);
-  }
-
-  & label {
-    flex: 1;
-
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-  }
-`;
-
-function Checkbox({ checked, onChange, disabled = false, id, children }) {
+function Checkbox({ checked, onChange, disabled = false, id, children, className = "" }) {
   return (
-    <StyledCheckbox>
+    <div className={cn("flex gap-1.6", className)}>
       <input
         type="checkbox"
         id={id}
         checked={checked}
         onChange={onChange}
         disabled={disabled}
+        className="h-2.4 w-2.4 outline-offset-2 origin-left accent-brand-600 disabled:accent-brand-600"
       />
-      <label htmlFor={!disabled ? id : ""}>{children}</label>
-    </StyledCheckbox>
+      <label htmlFor={!disabled ? id : ""} className="flex-1 flex items-center gap-3">
+        {children}
+      </label>
+    </div>
   );
 }
 

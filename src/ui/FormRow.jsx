@@ -1,48 +1,27 @@
-import styled from "styled-components";
+import { cn } from "../utils/helpers";
 
-const StyledFormRow = styled.div`
-  display: grid;
-  align-items: center;
-  grid-template-columns: 24rem 1fr 1.2fr;
-  gap: 2.4rem;
+function FormRow({ label, error, children, className = "" }) {
+  const hasButton = children?.props?.type === 'submit' || children?.type?.name === 'Button';
+  
+  const baseStyles = "py-3 first:pt-0 last:pb-0";
+  const gridStyles = hasButton 
+    ? "flex justify-end gap-3" 
+    : "grid items-center grid-cols-[24rem_1fr_1.2fr] gap-6 border-b border-grey-100 last:border-b-0";
 
-  padding: 1.2rem 0;
-
-  &:first-child {
-    padding-top: 0;
-  }
-
-  &:last-child {
-    padding-bottom: 0;
-  }
-
-  &:not(:last-child) {
-    border-bottom: 1px solid var(--color-grey-100);
-  }
-
-  &:has(button) {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.2rem;
-  }
-`;
-
-const Label = styled.label`
-  font-weight: 500;
-`;
-
-const Error = styled.span`
-  font-size: 1.4rem;
-  color: var(--color-red-700);
-`;
-
-function FormRow({ label, error, children }) {
   return (
-    <StyledFormRow>
-      {label && <Label htmlFor={children.props.id}>{label}</Label>}
+    <div className={cn(baseStyles, gridStyles, className)}>
+      {label && !hasButton && (
+        <label htmlFor={children.props?.id} className="font-medium text-grey-700">
+          {label}
+        </label>
+      )}
       {children}
-      {error && <Error>{error}</Error>}
-    </StyledFormRow>
+      {error && (
+        <span className="text-sm text-red-700">
+          {error}
+        </span>
+      )}
+    </div>
   );
 }
 

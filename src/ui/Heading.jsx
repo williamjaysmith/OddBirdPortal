@@ -1,41 +1,26 @@
-import styled, { css } from "styled-components";
+import { cn } from "../utils/helpers";
 
-// const test = css`
-//   text-align: center;
-//   ${10 > 5 && "background-color: yellow"}
-// `;
+const Heading = ({ as: Component = "h1", children, className = "", ...props }) => {
+  const baseStyles = "leading-tight";
+  
+  const headingStyles = {
+    h1: "text-2xl font-semibold",
+    h2: "text-xl font-semibold", 
+    h3: "text-xl font-medium",
+    h4: "text-2xl font-semibold text-center",
+  };
 
-const Heading = styled.h1`
-  ${(props) =>
-    props.as === "h1" &&
-    css`
-      font-size: 3rem;
-      font-weight: 600;
-    `}
+  const styles = cn(
+    baseStyles,
+    headingStyles[Component],
+    className
+  );
 
-  ${(props) =>
-    props.as === "h2" &&
-    css`
-      font-size: 2rem;
-      font-weight: 600;
-    `}
-    
-    ${(props) =>
-    props.as === "h3" &&
-    css`
-      font-size: 2rem;
-      font-weight: 500;
-    `}
-    
-    ${(props) =>
-    props.as === "h4" &&
-    css`
-      font-size: 3rem;
-      font-weight: 600;
-      text-align: center;
-    `}
-    
-  line-height: 1.4;
-`;
+  return (
+    <Component className={styles} {...props}>
+      {children}
+    </Component>
+  );
+};
 
 export default Heading;

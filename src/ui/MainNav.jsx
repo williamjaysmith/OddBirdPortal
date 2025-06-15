@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import styled from "styled-components";
 import {
   HiOutlineCalendarDays,
   HiOutlineCog6Tooth,
@@ -8,86 +7,76 @@ import {
   HiOutlineUsers,
 } from "react-icons/hi2";
 
-const NavList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-`;
-
-const StyledNavLink = styled(NavLink)`
-  &:link,
-  &:visited {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-
-    color: var(--color-grey-600);
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding: 1.2rem 2.4rem;
-    transition: all 0.3s;
-  }
-
-  /* This works because react-router places the active class on the active NavLink */
-  &:hover,
-  &:active,
-  &.active:link,
-  &.active:visited {
-    color: var(--color-grey-800);
-    background-color: var(--color-grey-50);
-    border-radius: var(--border-radius-sm);
-  }
-
-  & svg {
-    width: 2.4rem;
-    height: 2.4rem;
-    color: var(--color-grey-400);
-    transition: all 0.3s;
-  }
-
-  &:hover svg,
-  &:active svg,
-  &.active:link svg,
-  &.active:visited svg {
-    color: var(--color-brand-600);
-  }
-`;
-
 function MainNav() {
   return (
     <nav>
-      <NavList>
+      <ul className="flex flex-col gap-3">
         <li>
-          <StyledNavLink to="/dashboard">
-            <HiOutlineHome />
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              `flex items-center gap-1.2 text-grey-600 text-large font-medium px-2.4 py-1.2 transition-all duration-300 rounded-small hover:text-grey-800 hover:bg-grey-50 ${
+                isActive ? "text-grey-800 bg-grey-50" : ""
+              }`
+            }
+          >
+            <HiOutlineHome className="w-6 h-6 text-grey-400 transition-all duration-300 group-hover:text-brand-600" />
             <span>Home</span>
-          </StyledNavLink>
+          </NavLink>
         </li>
         <li>
-          <StyledNavLink to="/bookings">
-            <HiOutlineCalendarDays />
+          <NavLink
+            to="/bookings"
+            className={({ isActive }) =>
+              `flex items-center gap-1.2 text-grey-600 text-large font-medium px-2.4 py-1.2 transition-all duration-300 rounded-small hover:text-grey-800 hover:bg-grey-50 ${
+                isActive ? "text-grey-800 bg-grey-50" : ""
+              }`
+            }
+          >
+            <HiOutlineCalendarDays className="w-6 h-6 text-grey-400 transition-all duration-300 group-hover:text-brand-600" />
             <span>Bookings</span>
-          </StyledNavLink>
+          </NavLink>
         </li>
         <li>
-          <StyledNavLink to="/cabins">
-            <HiOutlineHomeModern />
+          <NavLink
+            to="/cabins"
+            className={({ isActive }) =>
+              `flex items-center gap-1.2 text-grey-600 text-large font-medium px-2.4 py-1.2 transition-all duration-300 rounded-small hover:text-grey-800 hover:bg-grey-50 ${
+                isActive ? "text-grey-800 bg-grey-50" : ""
+              }`
+            }
+          >
+            <HiOutlineHomeModern className="w-2.4 h-2.4 text-grey-400 transition-all duration-300 group-hover:text-brand-600" />
             <span>Cabins</span>
-          </StyledNavLink>
+          </NavLink>
         </li>
         <li>
-          <StyledNavLink to="/users">
-            <HiOutlineUsers />
+          <NavLink
+            to="/users"
+            className={({ isActive }) =>
+              `flex items-center gap-1.2 text-grey-600 text-large font-medium px-2.4 py-1.2 transition-all duration-300 rounded-small hover:text-grey-800 hover:bg-grey-50 ${
+                isActive ? "text-grey-800 bg-grey-50" : ""
+              }`
+            }
+          >
+            <HiOutlineUsers className="w-2.4 h-2.4 text-grey-400 transition-all duration-300 group-hover:text-brand-600" />
             <span>Users</span>
-          </StyledNavLink>
+          </NavLink>
         </li>
         <li>
-          <StyledNavLink to="/settings">
-            <HiOutlineCog6Tooth />
+          <NavLink
+            to="/settings"
+            className={({ isActive }) =>
+              `flex items-center gap-1.2 text-grey-600 text-large font-medium px-2.4 py-1.2 transition-all duration-300 rounded-small hover:text-grey-800 hover:bg-grey-50 ${
+                isActive ? "text-grey-800 bg-grey-50" : ""
+              }`
+            }
+          >
+            <HiOutlineCog6Tooth className="w-2.4 h-2.4 text-grey-400 transition-all duration-300 group-hover:text-brand-600" />
             <span>Settings</span>
-          </StyledNavLink>
+          </NavLink>
         </li>
-      </NavList>
+      </ul>
     </nav>
   );
 }

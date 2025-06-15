@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { useRecentStays } from "./useRecentStays";
 import { useRecentBookings } from "./useRecentBookings";
 import Spinner from "../../ui/Spinner";
@@ -8,13 +7,6 @@ import SalesChart from "./SalesChart";
 import DurationChart from "./DurationChart";
 import TodayActivity from "../check-in-out/TodayActivity";
 
-const StyledDashboardLayout = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 34rem auto;
-  gap: 2.4rem;
-`;
-
 function DashboardLayout() {
   const { bookings, isLoading: isLoading1 } = useRecentBookings();
   const { confirmedStays, isLoading: isLoading2, numDays } = useRecentStays();
@@ -23,7 +15,7 @@ function DashboardLayout() {
   if (isLoading1 || isLoading2 || isLoading3) return <Spinner />;
 
   return (
-    <StyledDashboardLayout>
+    <div className="grid grid-cols-4 auto-rows-min gap-2.4" style={{ gridTemplateRows: 'auto 34rem auto' }}>
       <Stats
         bookings={bookings}
         confirmedStays={confirmedStays}
@@ -33,7 +25,7 @@ function DashboardLayout() {
       <TodayActivity />
       <DurationChart confirmedStays={confirmedStays} />
       <SalesChart bookings={bookings} numDays={numDays} />
-    </StyledDashboardLayout>
+    </div>
   );
 }
 

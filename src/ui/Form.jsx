@@ -1,29 +1,24 @@
-import styled, { css } from "styled-components";
+import { cn } from "../utils/helpers";
 
-const Form = styled.form`
-  ${(props) =>
-    props.type === "regular" &&
-    css`
-      padding: 2.4rem 4rem;
+const Form = ({ type = "regular", children, className = "", ...props }) => {
+  const baseStyles = "overflow-hidden text-sm";
+  
+  const typeStyles = {
+    regular: "p-6 bg-grey-0 border border-grey-100 rounded-lg",
+    modal: "w-full",
+  };
 
-      /* Box */
-      background-color: var(--color-grey-0);
-      border: 1px solid var(--color-grey-100);
-      border-radius: var(--border-radius-md);
-    `}
+  const styles = cn(
+    baseStyles,
+    typeStyles[type],
+    className
+  );
 
-  ${(props) =>
-    props.type === "modal" &&
-    css`
-      width: 80rem;
-    `}
-    
-  overflow: hidden;
-  font-size: 1.4rem;
-`;
-
-Form.defaultProps = {
-  type: "regular",
+  return (
+    <form className={styles} {...props}>
+      {children}
+    </form>
+  );
 };
 
 export default Form;

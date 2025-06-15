@@ -1,21 +1,17 @@
-import styled from "styled-components";
+import { cn } from "../utils/helpers";
 
-const ButtonIcon = styled.button`
-  background: none;
-  border: none;
-  padding: 0.6rem;
-  border-radius: var(--border-radius-sm);
-  transition: all 0.2s;
-
-  &:hover {
-    background-color: var(--color-grey-100);
-  }
-
-  & svg {
-    width: 2.2rem;
-    height: 2.2rem;
-    color: var(--color-brand-600);
-  }
-`;
+const ButtonIcon = ({ children, className = "", ...props }) => {
+  return (
+    <button
+      className={cn(
+        "bg-transparent border-none p-2.5 rounded-small transition-all duration-200 hover:bg-grey-100 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-opacity-50 [&>svg]:w-2.4 [&>svg]:h-2.4 [&>svg]:text-brand-600",
+        className
+      )}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
 
 export default ButtonIcon;

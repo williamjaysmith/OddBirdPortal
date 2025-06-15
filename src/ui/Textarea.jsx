@@ -1,13 +1,15 @@
-import styled from "styled-components";
+import { cn } from "../utils/helpers";
 
-const Textarea = styled.textarea`
-  padding: 0.8rem 1.2rem;
-  border: 1px solid var(--color-grey-300);
-  border-radius: 5px;
-  background-color: var(--color-grey-0);
-  box-shadow: var(--shadow-sm);
-  width: 100%;
-  height: 8rem;
-`;
+const Textarea = ({ className = "", ...props }) => {
+  return (
+    <textarea
+      className={cn(
+        "px-1.2 py-3 border border-grey-300 rounded-small bg-grey-0 shadow-sm w-full h-32 resize-y focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-opacity-50 disabled:bg-grey-200 disabled:text-grey-500",
+        className
+      )}
+      {...props}
+    />
+  );
+};
 
 export default Textarea;

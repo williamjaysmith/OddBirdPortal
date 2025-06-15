@@ -1,24 +1,19 @@
-import styled from "styled-components";
 import HeaderMenu from "./HeaderMenu";
 import UserAvatar from "../features/authentication/UserAvatar";
-
-const StyledHeader = styled.header`
-  background-color: var(--color-grey-0);
-  padding: 1.2rem 4.8rem;
-  border-bottom: 1px solid var(--color-grey-100);
-
-  display: flex;
-  gap: 2.4rem;
-  align-items: center;
-  justify-content: flex-end;
-`;
+import Logo from "./Logo";
 
 function Header() {
   return (
-    <StyledHeader>
-      <UserAvatar />
-      <HeaderMenu />
-    </StyledHeader>
+    <header className="col-span-2 bg-grey-0 px-4 py-3 border-b border-grey-100 flex items-center justify-between">
+      {/* Left section */}
+      <Logo />
+
+      {/* Right section */}
+      <div className="flex items-center gap-6">
+        <UserAvatar />
+        <HeaderMenu />
+      </div>
+    </header>
   );
 }
 

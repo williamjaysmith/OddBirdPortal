@@ -1,34 +1,14 @@
-import styled from "styled-components";
+import { cn } from "../utils/helpers";
 
-const StyledDataItem = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  padding: 0.8rem 0;
-`;
-
-const Label = styled.span`
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-weight: 500;
-
-  & svg {
-    width: 2rem;
-    height: 2rem;
-    color: var(--color-brand-600);
-  }
-`;
-
-function DataItem({ icon, label, children }) {
+function DataItem({ icon, label, children, className = "" }) {
   return (
-    <StyledDataItem>
-      <Label>
+    <div className={cn("flex items-center gap-1.6 py-3", className)}>
+      <span className="flex items-center gap-3 font-medium [&>svg]:w-8 [&>svg]:h-8 [&>svg]:text-brand-600">
         {icon}
         <span>{label}</span>
-      </Label>
+      </span>
       {children}
-    </StyledDataItem>
+    </div>
   );
 }
 

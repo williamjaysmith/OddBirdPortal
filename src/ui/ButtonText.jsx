@@ -1,18 +1,17 @@
-import styled from 'styled-components';
+import { cn } from "../utils/helpers";
 
-const ButtonText = styled.button`
-  color: var(--color-brand-600);
-  font-weight: 500;
-  text-align: center;
-  transition: all 0.3s;
-  background: none;
-  border: none;
-  border-radius: var(--border-radius-sm);
-
-  &:hover,
-  &:active {
-    color: var(--color-brand-700);
-  }
-`;
+const ButtonText = ({ children, className = "", ...props }) => {
+  return (
+    <button
+      className={cn(
+        "text-brand-600 font-medium text-center transition-all duration-300 bg-transparent border-none rounded-small hover:text-brand-700 active:text-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-opacity-50",
+        className
+      )}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
 
 export default ButtonText;
